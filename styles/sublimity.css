@@ -1,0 +1,26 @@
+.image-rag {
+    max-height: 600px;
+    max-width: 800px;
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.closeBtn {
+    position: absolute;
+    z-index: 1000;
+    color: rgb(77,77,77);
+}
+
+.closeBtn:hover, .closeBtn:after, .closeBtn:before {
+    color: rgb(255,255,255);
+}
+
+.carouselRag{
+    padding: 10px 5px;
+    background-color: #212529;
+}
+
+.carouselRagItem {
+    height: 728px;
+}

@@ -1,1 +1,79 @@
-Hello Earth! We are in this together
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Shutter Sublimity | Raghunandan Bheemarayan</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet" />
+    <link href="./styles/sublimity.css" rel="stylesheet" />
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/birds.js"></script>
+    <script src="./js/mammal.js"></script>
+    <script src="./js/scapes.js"></script>
+    <script>
+        $(document).ready(function(){
+            const dt = new Date();
+            var bird = birds[Math.floor(dt.getDate() / 31 * birds.length)];
+            var animal = mammals[Math.floor(dt.getDate() / 31 * mammals.length)];
+            var landscape = scapes[Math.floor(dt.getDate() / 31 * scapes.length)];
+            
+            var random = Math.floor(Math.random() * 3);
+            
+            switch(random) {
+              case 0:
+                $('#mainImg').attr('src', "./images/birds/resized/" + bird.filename);
+                break;
+              case 1:
+                $('#mainImg').attr('src', "./images/mammals/" + animal.filename);
+                break;
+              case 2:
+                $('#mainImg').attr('src', "./images/scapes/" + landscape.filename);
+                break;
+            }
+            
+        });
+    </script>
+</head>
+<body>  
+  <div class="container-fluid bg-dark">
+    <section id="header-section">
+      <header class="d-flex flex-wrap justify-content-end">
+        <a href="./about.html" class="d-flex align-items-center text-decoration-none link-secondary">
+          <span class="btn btn-outline-secondary py-2 px-2 mt-3 fs-10"><i class="fas fa-id-card"></i> About me!</span>
+        </a>
+      </header>
+    </section>
+    <main>
+      <div class="bg-dark text-secondary py-1 text-center">
+        <h2 class="display-5 fw-bold text-white">Shutter Sublimity</h2>
+        <div class="col-lg-6 mx-auto py-2">
+          <!-- p class="fs-6">A showcase of birding and safari photos</p -->
+          <div class="d-grid gap-1 d-sm-flex justify-content-sm-center py-4">
+            <a href="./mammals.html" class="btn btn-outline-light btn-lg px-4 me-sm-3 fw-bold"><i class="fas fa-paw"></i> Mammals</a>
+            <a href="./birds.html" class="btn btn-outline-light btn-lg px-4 me-sm-3 fw-bold"><i class="fas fa-feather"></i> Birds</a>
+            <a href="./scapes.html" class="btn btn-outline-light btn-lg px-4 me-sm-3 fw-bold"><i class="fas fa-mountain"></i> Landscapes</a>
+          </div>
+        </div>
+        <div class="bg-dark overflow-hidden">
+          <div class="container px-5">
+            <img src="./images/birds/resized/10108_PaddyfieldPipit.jpg" id="mainImg" class="img-fluid border rounded-3 shadow-lg mb-4" alt="" width="700" height="500" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </main>
+     <footer class="text-end bg-dark py-1">
+      <p class="fixed-bottom text-light">
+        <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="./images/cc.png" /></a>
+      </p>
+    </footer>
+  </div>
+</body>
+</html>
+
+
