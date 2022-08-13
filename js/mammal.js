@@ -24,9 +24,9 @@ const mammals = [
     { 'id': '17952', 'caption': 'Blackbuck', 'filename': '17952_Blackbuck.jpg', 'location': 'Madhugiri, Karnataka', 'desc': '' },
     { 'id': '17729', 'caption': 'Blackbuck & Goat', 'filename': '17729_Blackbuck_Goat.jpg', 'location': 'Madhugiri, Karnataka', 'desc': '' },
     { 'id': '17751', 'caption': 'Blackbuck', 'filename': '17751_Blackbuck_female.jpg', 'location': 'Madhugiri, Karnataka', 'desc': '' },
-    { 'id': '19021', 'caption': 'Malabar Gaint Squirrel', 'filename': '19021_MalabarGaintSquirrel.jpg', 'location': 'KGudi, Karnataka', 'desc': '' },
+    { 'id': '19021', 'caption': 'Malabar Giant Squirrel', 'filename': '19021_MalabarGaintSquirrel.jpg', 'location': 'KGudi, Karnataka', 'desc': '' },
     { 'id': '18990', 'caption': 'Sloth Bear and cubs', 'filename': '18990_SlothBear_KGudi.jpg', 'location': 'KGudi, Karnataka', 'desc': '' },
-    { 'id': '19030', 'caption': 'Malabar Gaint Squirrel', 'filename': '19030_MalabarGaintSquirrel.jpg' , 'location': 'KGudi, Karnataka', 'desc': '' }
+    { 'id': '19030', 'caption': 'Malabar Giant Squirrel', 'filename': '19030_MalabarGaintSquirrel.jpg' , 'location': 'KGudi, Karnataka', 'desc': '' }
 ];
 
 function loadMammalCarousel() {
