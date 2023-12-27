@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Shutter Sublimity | Raghunandan Bheemarayan</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet" />
+    <link href="./styles/sublimity.css" rel="stylesheet" />
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/birdslist.js"></script>
+    <script src="./js/birdsbyname.js"></script>
+
+    <script> 
+      $(document).ready(function() {
+        loadBirdCarousel();
+      });
+    </script>
+</head>
+<body class="bg-dark">
+  <div class="container-fluid">
+    <section id="header-section">
+      <header class="d-flex flex-wrap justify-content-center py-1 mb-4">
+        <a href="./index.html" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none text-center">
+              <span class="fs-4 text-light">Shutter Sublimity</span>
+            </a>
+
+        <div class="collapse" id="navbarToggleExternalContent">
+          <div class="bg-dark p-1">
+            <ul class="nav nav-pills flex-column flex-sm-row">
+              <li class="nav-item"><a href="./index.html" class="nav-link text-secondary"><i class="fas fa-home"></i> Home</a></li>
+              <li class="nav-item"><a href="./birds.html" class="nav-link text-secondary" aria-current="page"><i class="fas fa-feather"></i> Birds</a></li>
+              <li class="nav-item"><a href="./mammals.html" class="nav-link text-secondary"><i class="fas fa-paw"></i> Mammals</a></li>
+              <!-- li class="nav-item"><a href="./reptiles.html" class="nav-link text-secondary">Reptiles</a></li -->
+              <li class="nav-item"><a href="./scapes.html" class="nav-link text-secondary"><i class="fas fa-mountain"></i> Landscapes</a></li>
+              <li class="nav-item"><a href="./blogger.html" class="nav-link text-secondary"><i class="fas fa-camera-retro"></i> Old Snaps</a></li>
+              <li class="nav-item"><a href="./about.html" class="nav-link text-secondary"><i class="fas fa-id-card"></i> About</a></li>
+            </ul> 
+          </div>
+        </div>
+        <nav class="navbar navbar-dark bg-dark">
+          <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+        </nav>
+      </header>
+      </section>
+    <main>
+      <p class='text-light'> Select bird to view pictures! </p>
+      <section id="accordion-section">
+        <div class="accordion accordian-flush" id="bird-accordion">
+        </div>
+      </section>
+    </main>
+    <footer class="text-end bg-dark p-1">
+      <p class="fixed-bottom text-light">
+        <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="./images/cc.png" /></a>
+      </p>
+    </footer>
+  </div>
+</body>
+</html>

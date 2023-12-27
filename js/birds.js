@@ -1,4 +1,14 @@
 const birds = [
+  { 'id': '3452CS', 'caption': 'Jerdon\'s Bushlark', 'filename': '3452CS_jerdons_Bushlark.png' },
+  { 'id': '3263CS', 'caption': 'Asian Green Bee-eater', 'filename': '3263CS_Asian_Green_Bee-eater.png' },
+  { 'id': '3269CS', 'caption': 'Southern Coucal', 'filename': '3269CS_Southern_Coucal.png' },
+  { 'id': '3307CS', 'caption': 'Indian Cormorant', 'filename': '3307CS_Indian_Cormorant.png' },
+  { 'id': '3284CS', 'caption': 'White-browed Bulbul', 'filename': '3284CS_White-browed_Bulbul.png' },
+  { 'id': '3198CS', 'caption': 'White-throated Kingfisher', 'filename': '3198CS_White-throated_Kingfisher.png' },
+  { 'id': '2565CS', 'caption': 'Purple Sunbird', 'filename': '2565CS_PurpleSunbird.png' },
+  { 'id': '2956CS', 'caption': 'Spotted Dove', 'filename': '2596CS_SpottedDove.png' },
+  { 'id': '3184CS', 'caption': 'White-throated Kingfisher', 'filename': '3184CS_White-throated_Kingfisher.png' },
+  { 'id': '3194CS', 'caption': 'White-throated Kingfisher', 'filename': '3194CS_White-throated_Kingfisher.png' },
   { 'id': '10108', 'caption': 'Paddyfield Pipit', 'filename': '10108_PaddyfieldPipit.jpg' }, 
   { 'id': '10127', 'caption': 'Paddyfield Pipit', 'filename': '10127_PaddyfieldPipit.jpg' }, 
   { 'id': '10271', 'caption': 'Paddyfield Pipit', 'filename': '10271_PaddyfieldPipit.jpg' }, 
@@ -16,7 +26,7 @@ const birds = [
   { 'id': '10458', 'caption': 'Yellow-wattled Lapwing', 'filename': '10458_Yellow-wattledLapwing.jpg' }, 
   { 'id': '10470', 'caption': 'Yellow-wattled Lapwing', 'filename': '10470_YWL.jpg' }, 
   { 'id': '10481', 'caption': 'Yellow-wattled Lapwing', 'filename': '10481_YWL.jpg' }, 
-  { 'id': '10481.1', 'caption': 'Yellow-wattled Lapwing', 'filename': '10481_Yellow-WattledLapwing.jpg' }, 
+  { 'id': '10481F', 'caption': 'Yellow-wattled Lapwing', 'filename': '10481_Yellow-WattledLapwing.jpg' }, 
   { 'id': '10491', 'caption': 'Yellow-wattled Lapwing', 'filename': '10491_YWL.jpg' }, 
   { 'id': '10495', 'caption': 'Yellow-wattled Lapwing', 'filename': '10495_YWL.jpg' }, 
   { 'id': '10537', 'caption': 'Plain Prinia', 'filename': '10537_PlainPirnia.jpg' }, 
@@ -27,8 +37,8 @@ const birds = [
   { 'id': '11766', 'caption': 'Small Minivet', 'filename': '11766_SmallMinivet.jpg' }, 
   { 'id': '11957', 'caption': 'Little Ringed Plover', 'filename': '11957_LittleRingedPlover.jpg' }, 
   { 'id': '11962', 'caption': 'Little Ringed Plover', 'filename': '11962_LittleRingedPlover.jpg' }, 
-  { 'id': '12000', 'caption': 'Yellow Wagtail', 'filename': '12000_YellowWagtail.jpg' }, 
-  { 'id': '12004', 'caption': 'Yellow Wagtail', 'filename': '12004_YellowWagtail.jpg' }, 
+  { 'id': '12000', 'caption': 'Grey Wagtail', 'filename': '12000_YellowWagtail.jpg' }, 
+  { 'id': '12004', 'caption': 'Grey Wagtail', 'filename': '12004_YellowWagtail.jpg' }, 
   { 'id': '12020', 'caption': 'Spot-billed Pelican', 'filename': '12020_Spot-billedPelican.jpg' }, 
   { 'id': '12029', 'caption': 'Grey Heron', 'filename': '12029_GreyHeron.jpg' }, 
   { 'id': '12467', 'caption': 'Indian Roller', 'filename': '12467_IndianRoller.jpg' }, 
@@ -101,7 +111,7 @@ const birds = [
   { 'id': '19229', 'caption': 'Changeable Hawk Eagle', 'filename': '19229_ChangeableHawkEagle.jpg' }, 
   { 'id': '19240', 'caption': 'Changeable Hawk Eagle', 'filename': '19240_ChangeableHawkEagle.jpg' }, 
   { 'id': '19297', 'caption': 'Jungle Owlet', 'filename': '19297_JungleOwlet.jpg' }, 
-  { 'id': '19330', 'caption': 'Little Cormorant', 'filename': '19330_LittleCormorant.jpg' }, 
+  { 'id': '19330', 'caption': 'Indian Cormorant', 'filename': '19330_LittleCormorant.jpg' }, 
   { 'id': '19533', 'caption': 'Changeable Hawk Eagle', 'filename': '19533_ChangeableHawkEagle.jpg' }, 
   { 'id': '19544', 'caption': 'Changeable Hawk Eagle', 'filename': '19544_ChangeableHawkEagle.jpg' }, 
   { 'id': '19561', 'caption': 'Changeable Hawk Eagle', 'filename': '19561_ChangeableHawkEagle-big.jpg' }, 
@@ -112,10 +122,10 @@ const birds = [
   { 'id': '4183', 'caption': 'Asian Koel', 'filename': '4183_Cuckoo.jpg' }, 
   { 'id': '4230', 'caption': 'White-breasted Kingfisher', 'filename': '4230_Kingfisher.jpg' }, 
   { 'id': '4236', 'caption': 'White-breasted Kingfisher', 'filename': '4236_Kingfisher.jpg' }, 
-  { 'id': '4253', 'caption': 'Shrike*', 'filename': '4253_Shrike.jpg' }, 
-  { 'id': '4266', 'caption': 'Shrike*', 'filename': '4266_Shrike.jpg' }, 
-  { 'id': '4317', 'caption': 'Warbler*', 'filename': '4317_flycatcher.jpg' }, 
-  { 'id': '4341', 'caption': 'Woodpecker*', 'filename': '4341_Woodpecker.jpg' }, 
+  { 'id': '4253', 'caption': 'Long-tailed Shrike', 'filename': '4253_Long-tailed_Shrike.jpg' }, 
+  { 'id': '4266', 'caption': 'Long-tailed Shrike', 'filename': '4266_Long-tailed_Shrike.jpg' }, 
+  { 'id': '4317', 'caption': 'Tickell\'s Leaf Warbler', 'filename': '4317_Tickells_Leaf_Warbler.jpg' }, 
+  { 'id': '4341', 'caption': 'White-bellied Woodpecker', 'filename': '4341_White-bellied_Woodpecker.jpg' }, 
   { 'id': '4349', 'caption': 'Jungle Owlet', 'filename': '4349_JungleOwlet.jpg' }, 
   { 'id': '4373', 'caption': 'Indian Peafowl', 'filename': '4373_Peafowl.jpg' }, 
   { 'id': '4375', 'caption': 'Indian Peafowl', 'filename': '4375_Peafowl.jpg' }, 
@@ -158,8 +168,7 @@ const birds = [
   { 'id': '7748', 'caption': 'Brown Fish Owl', 'filename': '7748_BrownFishOwl.jpg' }, 
   { 'id': '7940', 'caption': 'White-browed Wagtail', 'filename': '7940_White-browedWagtail.jpg' }, 
   { 'id': '7985', 'caption': 'Indian White-eye', 'filename': '7985_OrientalWhite-eye.jpg' }, 
-  { 'id': '7986', 'caption': 'Indian White-eye', 'filename': '7986_OrientalWhite-eye.jpg' }, 
-  { 'id': '7986.1', 'caption': 'Indian White-eye', 'filename': '7986_OrientalWhite-eye_neat.jpg' }, 
+  { 'id': '7986', 'caption': 'Indian White-eye', 'filename': '7986_OrientalWhite-eye_neat.jpg' }, 
   { 'id': '8000', 'caption': 'Jerdon\'s Leafbird', 'filename': '8000_JerdonsLeafbird.jpg' }, 
   { 'id': '8386', 'caption': 'Golden-fronted Leafbird', 'filename': '8386_GoldenFrontedLeafbird.jpg' }, 
   { 'id': '8387', 'caption': 'Golden-fronted Leafbird', 'filename': '8387_GoldenFrontedLeafbird.jpg' }, 
@@ -177,7 +186,7 @@ const birds = [
   { 'id': '8979', 'caption': 'Indian Roller', 'filename': '8979_IndianRoller.jpg' }, 
   { 'id': '9035', 'caption': 'Ashy-crowned SparrowLark', 'filename': '9035_Ashy-crownedSparrowLark.jpg' }, 
   { 'id': '9040', 'caption': 'Ashy-crowned SparrowLark', 'filename': '9040_Ashy-crownedSparrowLark.jpg' }, 
-  { 'id': '9045', 'caption': 'Ashy-crowned SparrowLark', 'filename': '9045_Ashy-crownedSparrowLark.jpg' }, 
+  { 'id': '9045', 'caption': 'Ashy-crowned SparrowLark', 'filename': '9045_Ashy-crownedSparrowLark.jpg' },
   { 'id': '9088', 'caption': 'Grey Heron', 'filename': '9088_GreyHeron.jpg' }
 ];
 
@@ -185,7 +194,7 @@ function loadBirdCarousel() {
   shuffle(birds).forEach(function(bird) {
     var path = "./images/birds/orig/" + bird.filename;
     var content = "<div id='cimg_" + bird.id + "' class='carousel-item text-center bg-dark carouselRagItem'><img class='image-rag' src='" + path + "'>";
-    var caption = "<div class='carousel-caption d-none d-md-block'><p>"+ bird.caption + "</p><!-- p>date | place</p --></div></div>";
+    var caption = "<div class='carousel-caption d-none d-md-block'><p>"+ bird.caption + "</p><!-- p>bird.date | bird.place</p --></div></div>";
     $(".carousel-inner").append(content + caption);
   });
   $(".carousel-item").first().addClass('active');

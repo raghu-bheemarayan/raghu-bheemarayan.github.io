@@ -1,6 +1,6 @@
 .image-rag {
-    max-height: 600px;
-    max-width: 800px;
+    max-height: 768px;
+    max-width: 1024px;
     height: 100%;
     width: 100%;
     object-fit: contain;
@@ -16,13 +16,19 @@
     color: rgb(255,255,255);
 }
 
-.carouselRag{
-    padding: 10px 5px;
+.carouselRag {
+    padding: 5px 5px;
     background-color: #212529;
 }
 
 .carouselRagItem {
-    height: 728px;
+    height: 820px;
+}
+
+.carousel-caption {
+    bottom: 0px;
+    padding-top: 1px;
+    padding-bottom: 1px;
 }
 
 html {
