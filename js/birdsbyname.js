@@ -6,14 +6,14 @@ function loadBirdCarousel() {
   var uniqBirds= $.unique(birdnames);
 
   //get unique bird names
-  uniqBirds.forEach(function(currbird){
+  uniqBirds.forEach(function(currbird, index){
     var currbirdWithoutSpace = currbird.replace(/\s+/g, '').replace(/\'/g,'').replace(/\&/g,'');
     
     var accItem = `
       <div class="accordion-item">
         <h2 class="accordion-header">
           <button class="accordion-button collapsed bg-dark text-light" type="button" data-bs-parent="#bird-accordion" data-bs-toggle="collapse" data-bs-target="#flush-collapse`+currbirdWithoutSpace+`" aria-expanded="false" aria-controls="flush-collapse`+currbirdWithoutSpace+`">` 
-          + currbird +
+          + (index+1) + '. ' + currbird +
         `</button>
         </h2>
         <div id="flush-collapse`+currbirdWithoutSpace+`" class="accordion-collapse collapse" data-bs-parent="#bird-accordion">
