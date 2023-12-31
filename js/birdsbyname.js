@@ -12,7 +12,7 @@ function loadBirdCarousel() {
     var accItem = `
       <div class="accordion-item">
         <h2 class="accordion-header">
-          <button class="accordion-button collapsed bg-dark text-light" type="button" data-bs-parent="#bird-accordion" data-bs-toggle="collapse" data-bs-target="#flush-collapse`+currbirdWithoutSpace+`" aria-expanded="false" aria-controls="flush-collapse`+currbirdWithoutSpace+`">` 
+          <button id="accordian-headerbtn-`+currbirdWithoutSpace+`" class="accordion-button collapsed bg-dark text-light" type="button" data-bs-parent="#bird-accordion" data-bs-toggle="collapse" data-bs-target="#flush-collapse`+currbirdWithoutSpace+`" aria-expanded="false" aria-controls="flush-collapse`+currbirdWithoutSpace+`">` 
           + (index+1) + '. ' + currbird +
         `</button>
         </h2>
@@ -35,19 +35,22 @@ function loadBirdCarousel() {
     $('#bird-accordion').append(accItem);
 
 
-    //get the bird objects with this name
+    //get the bird objects with the same name
     selbirds = $.grep(birds, function(n, i) {
       return n.caption === currbird;
     });   
 
-    //var currBirdCarouselInnerDiv = ""; //document.createElement("div");
     // add selbirds to carousel div
     selbirds.forEach(function(bird) {
       var path = "./images/birds/orig/" + bird.filename;
       var content = "<div id='cimg_" + bird.id + "' class='carousel-item text-center bg-dark carouselRagItem'><img class='figure-img rounded image-rag' src='" + path + "'>";
-      var caption = "<div class='carousel-caption d-none d-md-block'><p>"+ bird.caption + "</p><!-- p>bird.date | bird.place</p --></div></div>";
+      var location = (bird.location) ? " | " + bird.location : "";
+      var year = (bird.year) ? " | " + bird.year : "";
+      var caption = "<div class='carousel-caption d-none d-md-block'><p>"+ bird.caption + location + year + "</p><!-- p>bird.date | bird.place</p --></div></div>";
       $('#carousel-inner-'+currbirdWithoutSpace).append(content + caption);
     });
+    $('#accordian-headerbtn-'+currbirdWithoutSpace)[0].innerHTML = $('#accordian-headerbtn-'+currbirdWithoutSpace)[0].innerHTML + " [" + selbirds.length + "]";
+    //console.log($('#accordian-headerbtn-'+currbirdWithoutSpace)[0].innerHTML);
     //$('#carousel-inner-'+currbirdWithoutSpace).append(currBirdCarouselInnerDiv);
     $('#carousel-inner-'+currbirdWithoutSpace).find(".carousel-item").first().addClass('active');
     
