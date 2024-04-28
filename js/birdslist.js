@@ -1,4 +1,12 @@
 const birds = [
+  { "id": "CS4230", "caption": "Indian Spot-billed Duck", "filename": "CSIMG_4230_Indian_Spot-billed_Duck.png", "location": "Bhadra Reservior", "year": 2024 },
+  { "id": "CS4199", "caption": "Black-headed Ibis", "filename": "CSIMG_4199_Black-headed_Ibis.png", "location": "Bhadra Reservior", "year": 2024 },
+  { "id": "CS4176", "caption": "River Tern", "filename": "CSIMG_4176_River_Tern.png", "location": "Bhadra Reservior", "year": 2024 },
+  { "id": "CS4140", "caption": "River Tern", "filename": "CSIMG_4140_River_Tern.png", "location": "Bhadra Reservior", "year": 2024 },
+  { "id": "CS4134", "caption": "River Tern", "filename": "CSIMG_4134_River_Tern.png", "location": "Bhadra Reservior", "year": 2024 },
+  { "id": "CS4121", "caption": "River Tern", "filename": "CSIMG_4121_River_Tern.png", "location": "Bhadra Reservior", "year": 2024 },
+  { "id": "CS4066", "caption": "River Tern", "filename": "CSIMG_4066_River_Tern.png", "location": "Bhadra Reservior", "year": 2024 },
+  { "id": "CS4055", "caption": "River Tern", "filename": "CSIMG_4055_River_Tern.png", "location": "Bhadra Reservior", "year": 2024 },
   { "id": "CS4016", "caption": "White-browed Wagtail", "filename": "CSIMG_4016_White-browed_Wagtail.png", "location": "Melukote", "year" : 2023},  
   { "id": "CS4038", "caption": "White-browed Wagtail", "filename":"CSIMG_4038_White-browed_Wagtail.png", "location": "Melukote", "year" : 2023},  
   { "id": "CS4013", "caption": "Spotted Owlet", "filename":"CSIMG_4013_Spotted_Owlet.png", "location": "Melukote", "year" : 2023},  
