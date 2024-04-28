@@ -32,7 +32,7 @@ const mammals = [
 function loadMammalCarousel() {
   shuffle(mammals).forEach(function(mammal) {
     var path = "./images/mammals/" + mammal.filename;
-    var content = "<div id='cimg_" + mammal.id + "' class='carousel-item text-center bg-dark carouselRagItem'><img class='image-rag' src='" + path + "'>";
+    var content = "<div id='cimg_" + mammal.id + "' class='carousel-item text-center bg-dark carouselRagItem'><img class='image-rag' src='" + path + "' alt-text=' " + mammal.caption + "'>";
     var caption = "<div class='carousel-caption d-none d-md-block'><p>"+ mammal.caption + "</p><p>"+ mammal.location +"</p></div></div>";
     $(".carousel-inner").append(content + caption);
   });

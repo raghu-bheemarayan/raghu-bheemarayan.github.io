@@ -43,10 +43,11 @@ function loadBirdCarousel() {
     // add selbirds to carousel div
     selbirds.forEach(function(bird) {
       var path = "./images/birds/orig/" + bird.filename;
-      var content = "<div id='cimg_" + bird.id + "' class='carousel-item text-center bg-dark carouselRagItem'><img class='figure-img rounded image-rag' src='" + path + "'>";
       var location = (bird.location) ? " | " + bird.location : "";
       var year = (bird.year) ? " | " + bird.year : "";
       var caption = "<div class='carousel-caption d-none d-md-block'><p>"+ bird.caption + location + year + "</p><!-- p>bird.date | bird.place</p --></div></div>";
+     
+      var content = "<div id='cimg_" + bird.id + "' class='carousel-item text-center bg-dark carouselRagItem'><img class='figure-img rounded image-rag' src='" + path + "' alt-text='" + caption  +"'>";
       $('#carousel-inner-'+currbirdWithoutSpace).append(content + caption);
     });
     $('#accordian-headerbtn-'+currbirdWithoutSpace)[0].innerHTML = $('#accordian-headerbtn-'+currbirdWithoutSpace)[0].innerHTML + " [" + selbirds.length + "]";
