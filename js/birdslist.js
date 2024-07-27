@@ -1,4 +1,8 @@
 const birds = [
+  { "id": "C6231", "caption": "Crested Serpent Eagle", "filename": "CIMG_6231_Crested_Serpent_Eagle.jpg", "location": "Bandipur Tiger Reserve", "year": 2024 },
+  { "id": "C6210", "caption": "Crested Serpent Eagle", "filename": "CIMG_6210_Crested_Serpent_Eagle.jpg", "location": "Bandipur Tiger Reserve", "year": 2024 },
+  { "id": "C6150", "caption": "Crested Serpent Eagle", "filename": "CIMG_6150_Crested_Serpent_Eagle.jpg", "location": "Bandipur Tiger Reserve", "year": 2024 },
+  { "id": "C6126", "caption": "Indian Peafowl", "filename": "C6126_Indian_Peacock.jpg", "location": "Bandipur Tiger Reserve", "year": 2024 },
   { "id": "CS4230", "caption": "Indian Spot-billed Duck", "filename": "CSIMG_4230_Indian_Spot-billed_Duck.png", "location": "Bhadra Reservior", "year": 2024 },
   { "id": "CS4199", "caption": "Black-headed Ibis", "filename": "CSIMG_4199_Black-headed_Ibis.png", "location": "Bhadra Reservior", "year": 2024 },
   { "id": "CS4176", "caption": "River Tern", "filename": "CSIMG_4176_River_Tern.png", "location": "Bhadra Reservior", "year": 2024 },
@@ -211,7 +215,7 @@ const birds = [
     { "id": "7583", "caption": "Indian Cormorant", "filename": "7583_LittleCormorant.jpg" }, 
     { "id": "7624", "caption": "Grey Junglefowl", "filename": "7624_GreyJunglefowl.jpg" }, 
     { "id": "7647", "caption": "White-throated Kingfisher", "filename": "7647_White-throatedKingfisher.jpg" }, 
-    { "id": "7670", "caption": "Creasted Serpent Eagle", "filename": "7670_CrestedSerpentEagle.jpg" }, 
+    { "id": "7670", "caption": "Crested Serpent Eagle", "filename": "7670_CrestedSerpentEagle.jpg" }, 
     { "id": "7716", "caption": "Southern Coucal", "filename": "7716_SouthernCoucal.jpg" }, 
     { "id": "7748", "caption": "Brown Fish Owl", "filename": "7748_BrownFishOwl.jpg" }, 
     { "id": "7940", "caption": "White-browed Wagtail", "filename": "7940_White-browedWagtail.jpg" }, 
