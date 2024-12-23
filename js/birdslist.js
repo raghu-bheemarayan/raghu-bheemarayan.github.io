@@ -1,6 +1,6 @@
 const birds = [
-  { "id": "C7415", "caption": "Crested Serpant Eagle", "filename": "C7415_CSE.png", "location": "Billigiri Ranga Tiger Reserve", "year": 2024 },  
-  { "id": "C7376", "caption": "Crested Serpant Eagle", "filename": "C7376_CSE.png", "location": "Billigiri Ranga Tiger Reserve", "year": 2024 },  
+  { "id": "C7415", "caption": "Crested Serpent Eagle", "filename": "C7415_CSE.png", "location": "Billigiri Ranga Tiger Reserve", "year": 2024 },  
+  { "id": "C7376", "caption": "Crested Serpent Eagle", "filename": "C7376_CSE.png", "location": "Billigiri Ranga Tiger Reserve", "year": 2024 },  
   { "id": "C7223", "caption": "Asian Brown Flycatcher", "filename": "CS7223_Asian_Brown_Flycatcher.png", "location": "Billigiri Ranga Tiger Reserve", "year": 2024 },  
   { "id": "C7218", "caption": "Asian Brown Flycatcher", "filename": "CS7218_Asian_Brown_Flycatcher.png", "location": "Billigiri Ranga Tiger Reserve", "year": 2024 },  
   { "id": "C7212", "caption": "Asian Brown Flycatcher", "filename": "CS7212_Asian_Brown_Flycatcher.png", "location": "Billigiri Ranga Tiger Reserve", "year": 2024 },  

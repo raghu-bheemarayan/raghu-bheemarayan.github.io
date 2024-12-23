@@ -17,7 +17,7 @@ function loadBirdCarousel() {
         `</button>
         </h2>
         <div id="flush-collapse`+currbirdWithoutSpace+`" class="accordion-collapse collapse" data-bs-parent="#bird-accordion">
-          <div class="accordion-body">
+          <div class="bg-dark accordion-body">
             <div id="carouselPhotos`+currbirdWithoutSpace+`" class="carousel slide" data-bs-ride="carousel">
               <div class="carousel-inner" id="carousel-inner-`+currbirdWithoutSpace+`"></div>
               <button class="carousel-control-prev" type="button" data-bs-target="#carouselPhotos`+currbirdWithoutSpace+`" data-bs-slide="prev">
