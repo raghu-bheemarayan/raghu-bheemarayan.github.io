@@ -6,6 +6,21 @@
     object-fit: contain;
 }
 
+.image-rag-bd {
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    margin: 0px;
+}
+
+.image-rag-tb {
+    max-height: 200px;
+    max-width: 320px;
+    height: 100%;
+    width: 100%;
+}
+
+
 .closeBtn {
     position: absolute;
     z-index: 1000;

@@ -1,7 +1,6 @@
 
 function loadBirdCarousel() {
 
-
   var birdnames = birds.map(function(d) { return d.caption; }).sort();
   var uniqBirds= $.unique(birdnames);
 

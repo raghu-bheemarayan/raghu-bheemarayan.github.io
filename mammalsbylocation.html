@@ -18,10 +18,10 @@
 
     <script src="./js/main.js"></script>
     <script src="./js/image-mammals.js"></script>
-    <script src="./js/mammals.js"></script>
+    <script src="./js/mammalsbylocation.js"></script>
     <script>
       $(document).ready(function() {
-        loadMammalGallary();
+        loadMammalByLocation();
       });
     </script>
     
@@ -39,7 +39,7 @@
               <ul class="nav nav-pills flex-column flex-sm-row">
                 <li class="nav-item"><a href="./index.html" class="nav-link text-secondary"><i class="fas fa-home"></i> Home</a></li>
                 <li class="nav-item"><a href="./birds.html" class="nav-link text-secondary" aria-current="page"><i class="fas fa-feather"></i> Birds</a></li>
-                <li class="nav-item"><a href="./mammals.html" class="bg-secondary nav-link active"><i class="fas fa-paw"></i> Animals</a></li>
+                <li class="nav-item"><a href="./mammals.html" class="bg-secondary nav-link active"><i class="fas fa-paw"></i> Mammals</a></li>
                 <!-- li class="nav-item"><a href="./reptiles.html" class="nav-link text-secondary">Reptiles</a></li -->
                 <li class="nav-item"><a href="./scapes.html" class="nav-link text-secondary"><i class="fas fa-mountain"></i> Landscapes</a></li>
                 <li class="nav-item"><a href="./blogger.html" class="nav-link text-secondary"><i class="fas fa-camera-retro"></i> Old Snaps</a></li>
@@ -57,22 +57,23 @@
         </header>
         </section>
       <main>
-        <section id="image-grid-section">
-          <div class="container justify-content-center pb-5">
+        <section id="image-by-loc-grid-section">
+          <div class="container">
             <div class="row">
-              <div class="col align-self-center text-center">
-                <a href="./mammalsbylocation.html" class="btn btn-outline-secondary btn-md px-4 me-sm-3 fw-bold">View By Location</a>
-              </div>
               <div class="col align-self-center text-center text-white"><h2><i class="fas fa-paw"></i> Animals </h2></div>
-              <div class="col align-self-center text-center">
-                <a href="./mammalsbyname.html" class="btn btn-outline-secondary btn-md px-4 me-sm-3 fw-bold">View By Name</a>
-              </div>
             </div>
+            <div class="row">
+              <div class="col">
+                <a href="./mammals.html" class="btn btn-outline-secondary btn-sm px-4 me-sm-3 fw-bold">Back</a>
+              </div>
+            </div>      
+            <div class="row p-1 m-2"></div>
           </div>
-          <div id="img-container" class="container pt-10"></div>
+          <div id="mammal-accordion" class="accordion accordian-flush"></div>
         </section>
-      <footer class="text-end bg-dark py-1">
-        <p class="fixed-bottom text-light">
+      </main>
+      <footer class="text-end py-1">
+        <p class="fixed-bottom">
           <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="./images/cc.png" /></a>
         </p>
       </footer>
