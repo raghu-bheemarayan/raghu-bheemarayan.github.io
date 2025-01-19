@@ -21,56 +21,110 @@
     <script src="./js/mammals.js"></script>
     <script>
       $(document).ready(function() {
+        $("#type-select").val('Search By');
         loadMammalGallary();
+        $('#type-select').on("change", function(e) {
+          console.log(this.value);
+          var choice=this.value.toLowerCase();
+          var sels = mammals.map(function(m) { return m[choice]}).sort();
+          var uniq = $.unique(sels);
+          $("#value-select").find("option").remove().end();
+          uniq.forEach(function(item){
+            var content = "<option>"+ item + "</option>";
+            $("#value-select").append(content);
+          });
+        });
+
+        $('#loadBtn').on("click", function(e) {
+          console.log(this.value);
+          var choice=$("#value-select").find("option:selected").val();
+          var type=$("#type-select").find("option:selected").val();
+           //get the mammal objects with the same name
+          sel = $.grep(mammals, function(n, i) {
+            return n[type] === choice;
+          }); 
+          console.log(sel);
+          $("#img-container").find("div").remove().end();  
+          loadFilteredMammalGallary(sel);
+        });
+
+        $('#clearBtn').on("click", function(e) {
+          $("#type-select").val('');
+          $("#value-select").find("option").remove().end();
+          $("#img-container").find("div").remove().end();
+          loadMammalGallary();
+        });
+
       });
     </script>
     
   </head>
   <body>
     <div class="container-fluid">
-      <section id="header-section">
-        <header class="d-flex flex-wrap justify-content-center py-1 mb-4">
-          <a href="./index.html" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none text-center">
-            <h2 class="display-8 fw-bold text-white">Shutter Sublimity</h2>
-          </a>
-    
-          <div class="collapse" id="navbarToggleExternalContent">
-            <div class="bg-dark p-1">
-              <ul class="nav nav-pills flex-column flex-sm-row">
-                <li class="nav-item"><a href="./index.html" class="nav-link text-secondary"><i class="fas fa-home"></i> Home</a></li>
-                <li class="nav-item"><a href="./birds.html" class="nav-link text-secondary" aria-current="page"><i class="fas fa-feather"></i> Birds</a></li>
-                <li class="nav-item"><a href="./mammals.html" class="bg-secondary nav-link active"><i class="fas fa-paw"></i> Animals</a></li>
-                <!-- li class="nav-item"><a href="./reptiles.html" class="nav-link text-secondary">Reptiles</a></li -->
-                <li class="nav-item"><a href="./scapes.html" class="nav-link text-secondary"><i class="fas fa-mountain"></i> Landscapes</a></li>
-                <li class="nav-item"><a href="./blogger.html" class="nav-link text-secondary"><i class="fas fa-camera-retro"></i> Old Snaps</a></li>
-                <li class="nav-item"><a href="./about.html" class="nav-link text-secondary"><i class="fas fa-id-card"></i> About</a></li>
-              </ul> 
-            </div>
+      <header class="d-flex flex-wrap py-1">
+        <nav class="navbar">
+          <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="px-2"></div>
+            <a href="./index.html" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none text-center">
+              <h2 class="display-8 fw-bold text-white">Shutter Sublimity</h2>
+            </a>
           </div>
-          <nav class="navbar navbar-dark bg-dark">
-            <div class="container-fluid">
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-            </div>
-          </nav>
-        </header>
-        </section>
+        </nav>
+        <div class="collapse" id="navbarToggleExternalContent">
+          <div class="bg-dark p-1">
+            <ul class="nav nav-pills flex-column flex-sm-row">
+              <li class="nav-item"><a href="./index.html" class="nav-link text-secondary"><i class="fas fa-home"></i> Home</a></li>
+              <li class="nav-item"><a href="./birds.html" class="nav-link text-secondary" aria-current="page"><i class="fas fa-feather"></i> Birds</a></li>
+              <li class="nav-item"><a href="./mammals.html" class="bg-secondary nav-link active"><i class="fas fa-paw"></i> Animals</a></li>
+              <!-- li class="nav-item"><a href="./reptiles.html" class="nav-link text-secondary">Reptiles</a></li -->
+              <li class="nav-item"><a href="./scapes.html" class="nav-link text-secondary"><i class="fas fa-mountain"></i> Landscapes</a></li>
+              <li class="nav-item"><a href="./blogger.html" class="nav-link text-secondary"><i class="fas fa-camera-retro"></i> Old Snaps</a></li>
+              <li class="nav-item"><a href="./about.html" class="nav-link text-secondary"><i class="fas fa-id-card"></i> About</a></li>
+            </ul> 
+          </div>
+        </div>
+      </header>
       <main>
         <section id="image-grid-section">
-          <div class="container justify-content-center pb-5">
-            <div class="row">
-              <div class="col align-self-center text-center">
-                <a href="./mammalsbylocation.html" class="btn btn-outline-secondary btn-md px-4 me-sm-3 fw-bold">View By Location</a>
-              </div>
-              <div class="col align-self-center text-center text-white"><h2><i class="fas fa-paw"></i> Animals </h2></div>
-              <div class="col align-self-center text-center">
-                <a href="./mammalsbyname.html" class="btn btn-outline-secondary btn-md px-4 me-sm-3 fw-bold">View By Name</a>
+          <div class="container-fluid">
+            <div class="row py-2">
+              <div class="col align-self-center text-center text-white"><h3><i class="fas fa-paw"></i> Animals </h3></div>
+            </div>
+          </div>
+          <div id="filter-container" class="collapse show">
+            <div  class="container">
+              <div class="row py-2">
+                <div class="col-md-4">
+                  <div class="form-floating mb-3">
+                    <select id="type-select" class="form-select" aria-label="type-select" data-live-search-placeholder="Search By...">
+                      <option value="caption">Caption</option>
+                      <option value="location">Location</option>
+                      <option value="year">Year</option>
+                    </select>
+                    <label for="type-select">Select Type</label>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="form-floating">
+                    <select id="value-select" class="form-select" aria-label="value-select"></select>
+                    <label for="value-select">Select Value</label>
+                  </div>
+                </div>
+                <div class="col-md-1">
+                  <button id="loadBtn" class="btn btn-outline-secondary btn-lg px-4 me-sm-3 fw-bold">Load</button>
+                </div>
+                <div class="col-md-3">
+                  <button id="clearBtn" class="btn btn-outline-secondary btn-md px-4 me-sm-3 fw-bold">Clear</button>
+                </div>
               </div>
             </div>
           </div>
-          <div id="img-container" class="container pt-10"></div>
+          <div id="img-container" class="container-fluid"></div>
         </section>
+      </main>
       <footer class="text-end bg-dark py-1">
         <p class="fixed-bottom text-light">
           <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="./images/cc.png" /></a>

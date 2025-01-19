@@ -9,9 +9,9 @@ function loadMammalByName() {
     var currWithoutSpace = currmammal.replace(/\s+/g, '').replace(/\'/g,'').replace(/\&/g,'');
     namcontent += "<div class='accordion-item'>";
     namcontent += "<h2 class='accordion-header'>"
-    namcontent += "<button class='accordion-button collapsed bg-dark text-light' type='button' data-bs-parent='#mammal-accordion' data-bs-toggle='collapse' data-bs-target='#flush-collapse"+currWithoutSpace+"' aria-expanded='false' aria-controls='flush-collapse"+currWithoutSpace+"'>";
+    namcontent += "<button class='accordion-button bg-dark text-light' type='button' data-bs-parent='#mammal-accordion' data-bs-toggle='collapse' data-bs-target='#flush-collapse"+currWithoutSpace+"' aria-expanded='false' aria-controls='flush-collapse"+currWithoutSpace+"'>";
     namcontent += currmammal + "</button></h2>"
-    namcontent += "<div id='flush-collapse"+currWithoutSpace+"' class='accordion-collapse collapse' data-bs-parent='#mammal-accordion'>"
+    namcontent += "<div id='flush-collapse"+currWithoutSpace+"' class='accordion-collapse show'>"
     namcontent += "<div class='accordion-body'>"
     namcontent += "<div class='container'><div class='row row-cols-1 row-cols-md-2 row-cols-lg-4 g-3 justify-content-around m-1'>"
   

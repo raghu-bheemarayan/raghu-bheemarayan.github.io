@@ -11,7 +11,7 @@ function loadMammalByLocation() {
     outContent += "<h2 class='accordion-header'>"
     outContent += "<button class='accordion-button bg-dark text-light' type='button' data-bs-toggle='collapse' data-bs-target='#collapse-"+currWithoutSpace+"' aria-expanded='true' aria-controls='collapse-"+currWithoutSpace+"'>";
     outContent += item + "</button></h2>"
-    outContent += "<div id='collapse-"+currWithoutSpace+"' class='accordion-collapse collapse' data-bs-parent='#mammal-accordion'>"
+    outContent += "<div id='collapse-"+currWithoutSpace+"' class='accordion-collapse show'>"
     outContent += "<div class=' accordion-body'>"
     outContent += "<div class='container'><div class='row row-cols-1 row-cols-md-2 row-cols-lg-4 g-3 justify-content-around m-1'>"
   
