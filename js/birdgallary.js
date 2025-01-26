@@ -6,8 +6,8 @@ function loadBirdsGallary() {
   var content = "";
   
   shuffle(birds).forEach(function(bird) {
-    var path = "./images/birds/orig/" + bird.filename;
-    var tbPath = path.replaceAll("/birds/orig/", "/birds/orig/tb/").replaceAll(".jpg", ".thumbnail.jpg").replaceAll(".png", ".thumbnail.png")
+    var path = "./images/birds/" + bird.filename;
+    var tbPath = path.replaceAll("/birds/", "/birds/tb/").replaceAll(".jpg", ".thumbnail.jpg").replaceAll(".png", ".thumbnail.png")
     if(i==0) {
       content += "<div class='row row-cols-1 row-cols-md-2 row-cols-lg-4 g-3 justify-content-around m-1'>";
     }
@@ -40,8 +40,8 @@ function loadFilteredBirdsGallary(filterBirds) {
   
   filterBirds.forEach(function(bird) {
 
-    var path = "./images/birds/orig/" + bird.filename;
-    var tbPath = path.replaceAll("/birds/orig/", "/birds/orig/tb/").replaceAll(".jpg", ".thumbnail.jpg").replaceAll(".png", ".thumbnail.png")
+    var path = "./images/birds/" + bird.filename;
+    var tbPath = path.replaceAll("/birds/", "/birds/tb/").replaceAll(".jpg", ".thumbnail.jpg").replaceAll(".png", ".thumbnail.png")
     if(i==0) {
       content += "<div class='row row-cols-1 row-cols-md-2 row-cols-lg-5 g-3 justify-content-around m-1'>";
     }
