@@ -1,4 +1,7 @@
 const birds = [
+  { "id": "CS11330", "caption": "Velvet Nuthatch", "filename": "CSIMG_11330_VelvetNuthatch.png", "location": "Aruvankad", "year": "2025" }, 
+  { "id": "CS11350", "caption": "Velvet Nuthatch", "filename": "CSIMG_11350_VelvetNuthatch.png", "location": "Aruvankad", "year": "2025" }, 
+
   { "id": "CS10076", "caption": "Srilankan Frogmouth", "filename": "CSIMG_10076_SrilankanFrogmouth.png", "location": "Thattekad", "year": "2024" }, 
   { "id": "CS10058", "caption": "Green Warbler", "filename": "CSIMG_10058_GreenWarbler.png", "location": "Thattekad", "year": "2024" }, 
   { "id": "CS9398", "caption": "Flame-throated Bulbul", "filename": "CSIMG_9398_Flame-throatedBulbul.png", "location": "Thattekad", "year": "2024" }, 
