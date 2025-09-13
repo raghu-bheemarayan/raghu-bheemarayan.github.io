@@ -1,6 +1,12 @@
 const birds = [
-  { "id": "CS11330", "caption": "Velvet Nuthatch", "filename": "CSIMG_11330_VelvetNuthatch.png", "location": "Aruvankad", "year": "2025" }, 
-  { "id": "CS11350", "caption": "Velvet Nuthatch", "filename": "CSIMG_11350_VelvetNuthatch.png", "location": "Aruvankad", "year": "2025" }, 
+  { "id": "CS11468", "caption": "Nilgiri Flowerpecker", "filename": "CSIMG_11468_Nilgiri_Flowerpecker.png", "location": "Aruvankadu", "year": "2025" }, 
+  { "id": "CS11492", "caption": "White-browed Fantail", "filename": "CSIMG_11492_White-browed_Fantail.png", "location": "Aruvankadu", "year": "2025" }, 
+  { "id": "CS11525", "caption": "White-browed Fantail", "filename": "CSIMG_11525_White-browed_Fantail.png", "location": "Aruvankadu", "year": "2025" }, 
+  { "id": "CS11557", "caption": "Spotted Dove", "filename": "CSIMG_11557_Spotted_Dove.png", "location": "Aruvankadu", "year": "2025" }, 
+  { "id": "CS11586", "caption": "Spotted Dove", "filename": "CSIMG_11586_Spotted_Dove.png", "location": "Aruvankadu", "year": "2025" }, 
+
+  { "id": "CS11330", "caption": "Velvet Nuthatch", "filename": "CSIMG_11330_VelvetNuthatch.png", "location": "Aruvankadu", "year": "2025" }, 
+  { "id": "CS11350", "caption": "Velvet Nuthatch", "filename": "CSIMG_11350_VelvetNuthatch.png", "location": "Aruvankadu", "year": "2025" }, 
 
   { "id": "CS10076", "caption": "Srilankan Frogmouth", "filename": "CSIMG_10076_SrilankanFrogmouth.png", "location": "Thattekad", "year": "2024" }, 
   { "id": "CS10058", "caption": "Green Warbler", "filename": "CSIMG_10058_GreenWarbler.png", "location": "Thattekad", "year": "2024" }, 
