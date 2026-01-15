@@ -62,5 +62,5 @@ function loadFilteredBirdsGallary(filterBirds) {
 
   });
 
-  Fancybox.bind("[data-fancybox]", {});
+  Fancybox.bind("[data-fancybox]", {speed: 10000});
 }
