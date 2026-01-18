@@ -18,7 +18,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
 
     <script src="./js/main.js"></script>
-    <script src="./js/birds.js"></script>
+    <script src="./js/image-birds.js"></script>
     <script src="./js/image-mammals.js"></script>
     <script src="./js/mammals.js"></script>
     <script src="./js/scapes.js"></script>
@@ -33,7 +33,7 @@
             
             switch(random) {
               case 0:
-                $('#mainImg').attr('src', "./images/birds/resized/" + bird.filename);
+                $('#mainImg').attr('src', "./images/birds/" + bird.filename);
                 break;
               case 1:
                 $('#mainImg').attr('src', "./images/mammals/" + animal.filename);
